@@ -5,6 +5,10 @@
  */
 package com.jojo;
 
+import java.util.ArrayList;
+import javax.swing.AbstractButton;
+import javax.swing.JCheckBox;
+
 /**
  *
  * @author Jojo
@@ -295,7 +299,31 @@ public class NewJDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_btnCancelActionPerformed
 
     private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
+        //gets the selected course
+        String selectedCourse = cmbCourse.getSelectedItem().toString();
+        System.out.println("Course selected is: "+selectedCourse);
         
+        //gets the selected year level
+        String selectedYearlevel = cmbYearlevel.getSelectedItem().toString();
+        System.out.println("Year Level selected is: "+selectedYearlevel);
+        
+        System.out.println("Subject/s selected is/are: ");
+        
+        //initialize counter for selected checkboxes
+        int ctr = 0;
+        
+        //get the count of checkboxes inside the panel1
+        int subjectsCount = panel1.getComponentCount();
+        
+        //traverse all the checkboxes inside the panel1
+        for(int a=0;a<subjectsCount;a++){
+            JCheckBox current = (JCheckBox) panel1.getComponent(a);
+            if(current.isSelected()){
+                System.out.println("\t"+current.getText());
+                ctr++;
+            }
+        }   
+        System.out.println("Total Subjects selected: "+ctr);
     }//GEN-LAST:event_btnSubmitActionPerformed
 
     /**
