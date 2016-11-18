@@ -89,6 +89,7 @@ public class NewJFrameEnhanced extends javax.swing.JFrame {
         cmbFemale.setText("Female");
         cmbFemale.setNextFocusableComponent(age);
 
+        age.setModel(new javax.swing.SpinnerNumberModel(0, null, 100, 1));
         age.setNextFocusableComponent(txtHome);
 
         btnCancel.setText("Cancel");
@@ -213,6 +214,27 @@ public class NewJFrameEnhanced extends javax.swing.JFrame {
 
     private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
         JOptionPane.showMessageDialog(rootPane, "Information Saved.", "Save", JOptionPane.NO_OPTION);
+        
+        String fname = txtFname.getText();
+        String mname = txtMname.getText();
+        String lname = txtLname.getText();
+        String gender = "";
+        int theAge = Integer.parseInt(age.getValue()+"");
+        String homeAddress = txtHome.getText();
+        String workAddress = txtWork.getText();
+        
+        if(cmbMale.isSelected()){
+            gender = "Male";
+        }else{
+            gender = "Female";
+        }
+        
+        System.out.println("-----User details-----");
+        System.out.println("Name: "+fname+" "+mname+" "+lname);
+        System.out.println("Gender: "+gender);
+        System.out.println("Age: "+theAge+" years old");
+        System.out.println("Home Address: "+homeAddress);
+        System.out.println("Work Address: "+workAddress);
     }//GEN-LAST:event_btnSubmitActionPerformed
 
     /**
