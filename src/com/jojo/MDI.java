@@ -35,17 +35,20 @@ public class MDI extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jSeparator1 = new javax.swing.JPopupMenu.Separator();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        jMenuItem15 = new javax.swing.JMenuItem();
+        jSeparator3 = new javax.swing.JPopupMenu.Separator();
+        jMenuItem12 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem7 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jSeparator2 = new javax.swing.JPopupMenu.Separator();
+        jMenuItem9 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1360, 720));
@@ -53,11 +56,11 @@ public class MDI extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(1360, 720));
         setSize(new java.awt.Dimension(1360, 720));
 
-        jButton1.setText("jButton1");
+        jButton1.setText("New Student");
 
-        jButton2.setText("jButton2");
+        jButton2.setText("Edit Student");
 
-        jButton3.setText("jButton3");
+        jButton3.setText("Delete Student");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -89,25 +92,19 @@ public class MDI extends javax.swing.JFrame {
             .addGap(0, 582, Short.MAX_VALUE)
         );
 
-        jMenu1.setText("File");
+        jMenu1.setText("Manage");
 
-        jMenuItem1.setText("Reptiles");
+        jMenuItem1.setText("Student");
         jMenu1.add(jMenuItem1);
 
-        jMenuItem2.setText("Birds");
-        jMenu1.add(jMenuItem2);
+        jMenuItem15.setText("User");
+        jMenu1.add(jMenuItem15);
+        jMenu1.add(jSeparator3);
 
-        jMenuItem3.setText("Mammals");
-        jMenu1.add(jMenuItem3);
-        jMenu1.add(jSeparator1);
-
-        jMenuItem4.setText("Exit");
-        jMenu1.add(jMenuItem4);
+        jMenuItem12.setText("Exit");
+        jMenu1.add(jMenuItem12);
 
         jMenuBar1.add(jMenu1);
-
-        jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
 
         jMenu3.setText("View");
 
@@ -118,15 +115,29 @@ public class MDI extends javax.swing.JFrame {
 
         jMenu4.setText("Settings");
 
-        jMenuItem5.setText("Date/Time");
+        jMenuItem5.setText("Date & Time");
         jMenu4.add(jMenuItem5);
 
-        jMenuItem6.setText("Database");
+        jMenuItem6.setText("Database Connection");
         jMenu4.add(jMenuItem6);
+
+        jMenuItem4.setText("Backup & Restore");
+        jMenu4.add(jMenuItem4);
 
         jMenuBar1.add(jMenu4);
 
         jMenu5.setText("Help");
+
+        jMenuItem2.setText("Contents");
+        jMenu5.add(jMenuItem2);
+
+        jMenuItem3.setText("License");
+        jMenu5.add(jMenuItem3);
+        jMenu5.add(jSeparator2);
+
+        jMenuItem9.setText("About Us");
+        jMenu5.add(jMenuItem9);
+
         jMenuBar1.add(jMenu5);
 
         setJMenuBar(jMenuBar1);
@@ -196,19 +207,22 @@ public class MDI extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem12;
+    private javax.swing.JMenuItem jMenuItem15;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JPopupMenu.Separator jSeparator2;
+    private javax.swing.JPopupMenu.Separator jSeparator3;
     // End of variables declaration//GEN-END:variables
 }
